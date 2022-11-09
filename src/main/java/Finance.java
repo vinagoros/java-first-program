@@ -49,7 +49,7 @@ public class Finance {
         }
         boolean isValidCommand = validateCommandArguments(args);
         if(!isValidCommand){
-            commandsToUsage.get(command);
+            System.out.println(commandsToUsage.get(args[0]));
             return;
         }
         executeCommand(command, Arrays.copyOfRange(args,1,args.length));
