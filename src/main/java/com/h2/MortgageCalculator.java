@@ -23,7 +23,7 @@ public class MortgageCalculator {
     public void calculateMonthlyPayment(){
         float r = getMonthlyInterestRate();
         int n = getNumberOfPayments();
-        long P = this.loanAmount;
+        long P = loanAmount;
         double M = P*(r*Math.pow((1+r),n)/(Math.pow((1+r),n)-1));
         this.monthlyPayment = M;
     }
