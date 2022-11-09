@@ -13,7 +13,7 @@ public class Finance {
             SAVINGS_CALCULATOR, "usage: savingsCalculator <credits separated by ','> <debits separated by ','>",
             MORTGAGE_CALCULATOR, "usage: mortgageCalculator <loanAmount> <termInYears> <annualRate>");
 
-    private static boolean validateCommandArguments(String args[]){
+    private static boolean validateCommandArguments(String[] args){
         switch (args[0]){
             case BEST_LOAN_RATES:
                 return args.length == 1;
